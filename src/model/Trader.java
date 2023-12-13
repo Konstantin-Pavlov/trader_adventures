@@ -1,4 +1,4 @@
-package trader;
+package model.trader;
 
 public class Trader {
     private int totalCash;
