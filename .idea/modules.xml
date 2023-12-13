@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Sumulator_of_seller.iml" filepath="$PROJECT_DIR$/Sumulator_of_seller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sumulator_of_trader.iml" filepath="$PROJECT_DIR$/Sumulator_of_trader.iml" />
     </modules>
   </component>
 </project>
