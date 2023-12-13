@@ -1,4 +1,4 @@
-package cities;
+package model.cities;
 
 import java.util.HashMap;
 import java.util.Map;
