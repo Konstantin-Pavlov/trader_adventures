@@ -2,8 +2,8 @@ package emums;
 
 enum Quality
 {
-    Poor,
-    Average,
-    Good,
-    Excellent
+    POOR,
+    AVERAGE,
+    GOOD,
+    EXCELLENT
 }
