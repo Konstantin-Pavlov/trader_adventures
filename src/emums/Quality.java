@@ -1,6 +1,6 @@
 package emums;
 
-enum Quality
+public enum Quality
 {
     POOR,
     AVERAGE,
