@@ -8,6 +8,7 @@ public enum Goods {
     CLOTH(20, 1.2,0),
     PAINT(50, 1.2,0);
 
+
     private final int weight;
     private final double qualityCoef;
     private int priceOnPoint;
@@ -17,6 +18,8 @@ public enum Goods {
         this.qualityCoef = qualityCoef;
         this.priceOnPoint = priceOnPoint;
     }
+
+
 
     public int getWeight() {
         return weight;
