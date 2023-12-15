@@ -1,8 +1,7 @@
 package state;
 
-public interface Event {
-    static void run() {
-        System.out.println("da");
-    }
+import model.Trader;
 
+public interface Event {
+     void run(Trader trader) ;
 }

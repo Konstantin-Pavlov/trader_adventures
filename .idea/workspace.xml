@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff0697ac-e491-4dd4-af27-15bc9454c9a7" name="Changes" comment="added merged into" />
+    <list default="true" id="ff0697ac-e491-4dd4-af27-15bc9454c9a7" name="Changes" comment="added merged into">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Trader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Trader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/Bandits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/Bandits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/BrokenWheel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/BrokenWheel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/GoodSpolied.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/GoodSpolied.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/MetLocal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/MetLocal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/NormalDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/NormalDay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/Rain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/Rain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/River.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/River.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/RoadsideInn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/RoadsideInn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/SmoothRoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/SmoothRoad.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,23 +70,28 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2ZRn3p1V252CZTM4e6rE87MbUor" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "mari__branch",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -89,6 +107,13 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-8336523bb0d9-93b19daf" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
