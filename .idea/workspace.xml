@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff0697ac-e491-4dd4-af27-15bc9454c9a7" name="Changes" comment="added Trader to run method in Event interface">
+    <list default="true" id="ff0697ac-e491-4dd4-af27-15bc9454c9a7" name="Changes" comment="implemented event When it started to rain">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/Rain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/Rain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/SmoothRoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/SmoothRoad.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702629182854</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implemented event When it started to rain">
+      <option name="closed" value="true" />
+      <created>1702630140037</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702630140037</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +147,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added gitignore" />
     <MESSAGE value="added Trader to run method in Event interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Trader to run method in Event interface" />
+    <MESSAGE value="implemented event When it started to rain" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented event When it started to rain" />
   </component>
 </project>
