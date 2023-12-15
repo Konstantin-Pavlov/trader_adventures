@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff0697ac-e491-4dd4-af27-15bc9454c9a7" name="Changes" comment="implemented event When it started to rain">
+    <list default="true" id="ff0697ac-e491-4dd4-af27-15bc9454c9a7" name="Changes" comment="implemented a decrease in the quality of a randomly selected product">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/SmoothRoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/SmoothRoad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/emums/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/emums/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Trader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Trader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/Rain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/Rain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,19 +73,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "mari__branch",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;mari__branch&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -138,7 +143,87 @@
       <option name="project" value="LOCAL" />
       <updated>1702630140037</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implemented event SmoothRoad">
+      <option name="closed" value="true" />
+      <created>1702630841896</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702630841896</updated>
+    </task>
+    <task id="LOCAL-00005" summary="implemented event NormalDay">
+      <option name="closed" value="true" />
+      <created>1702634678476</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702634678476</updated>
+    </task>
+    <task id="LOCAL-00006" summary="class product moved from enums package to model package">
+      <option name="closed" value="true" />
+      <created>1702634732276</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702634732276</updated>
+    </task>
+    <task id="LOCAL-00007" summary="created tasks file">
+      <option name="closed" value="true" />
+      <created>1702634766576</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702634766576</updated>
+    </task>
+    <task id="LOCAL-00008" summary="changed enum good, added start price">
+      <option name="closed" value="true" />
+      <created>1702635494502</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702635494502</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added method buyGoods in class Trader">
+      <option name="closed" value="true" />
+      <created>1702637195744</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702637195744</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fields in the enum Quality were changed in accordance with the task, coefficient values were added to values">
+      <option name="closed" value="true" />
+      <created>1702639981554</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702639981554</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added methods to goods enum">
+      <option name="closed" value="true" />
+      <created>1702641268650</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702641268650</updated>
+    </task>
+    <task id="LOCAL-00012" summary="unnecessary classes were removed. we use enums instead">
+      <option name="closed" value="true" />
+      <created>1702641356385</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702641356385</updated>
+    </task>
+    <task id="LOCAL-00013" summary="implemented a decrease in the quality of a randomly selected product">
+      <option name="closed" value="true" />
+      <created>1702644135737</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702644135737</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +233,16 @@
     <MESSAGE value="added gitignore" />
     <MESSAGE value="added Trader to run method in Event interface" />
     <MESSAGE value="implemented event When it started to rain" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented event When it started to rain" />
+    <MESSAGE value="implemented event SmoothRoad" />
+    <MESSAGE value="implemented event NormalDay" />
+    <MESSAGE value="class product moved from enums package to model package" />
+    <MESSAGE value="created tasks file" />
+    <MESSAGE value="changed enum good, added start price" />
+    <MESSAGE value="added method buyGoods in class Trader" />
+    <MESSAGE value="fields in the enum Quality were changed in accordance with the task, coefficient values were added to values" />
+    <MESSAGE value="added methods to goods enum" />
+    <MESSAGE value="unnecessary classes were removed. we use enums instead" />
+    <MESSAGE value="implemented a decrease in the quality of a randomly selected product" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented a decrease in the quality of a randomly selected product" />
   </component>
 </project>

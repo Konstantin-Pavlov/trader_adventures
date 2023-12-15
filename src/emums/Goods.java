@@ -30,6 +30,10 @@ public enum Goods {
         return qualityCoefficient;
     }
 
+    public Quality getQuality() {
+        return quality;
+    }
+
     public double getFinalPrice() {
         return this.priceOnPoint * this.quality.getQualityCoefficient();
     }

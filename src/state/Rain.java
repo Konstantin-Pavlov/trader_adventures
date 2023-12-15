@@ -9,9 +9,9 @@ import java.util.Random;
 public class Rain implements Event {
     @Override
     public void run(Trader trader) {
-        System.out.println("сегодня идет дождь, скорость снижеа на две лиги ");
-        trader.setSpeed(trader.getSpeed()-2);
-        if (new Random().nextInt(10) < 3){
+        System.out.println("сегодня идет дождь, скорость снижена на две лиги ");
+        trader.setSpeed(trader.getSpeed() - 2);
+        if (new Random().nextInt(10) < 3) {
             System.out.println("с вероятностью 30% 1 товар испортился качество и цена снижены");
             Goods good = trader.getRandomGood();
             switch (good.getQuality()) {
@@ -29,11 +29,11 @@ public class Rain implements Event {
                     break;
                 default:
                     System.err.println("товар максимально испорчен");
-
-
             }
 
-            }
+            System.out.println("товар испорчен: " + good.name());
+            System.out.println("new price: " + good.getFinalPrice());
         }
     }
 }
+

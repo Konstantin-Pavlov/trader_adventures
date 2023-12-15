@@ -10,16 +10,16 @@ public class Product {
 
     public void decreaseQuality() {
         switch (quality) {
-            case EXCELLENT:
-                quality = Quality.GOOD;
+            case NORMAL:
+                quality = Quality.NORMAL;
                 break;
-            case GOOD:
-                quality = Quality.AVERAGE;
+            case SLIGHTLY_DAMAGED:
+                quality = Quality.SLIGHTLY_DAMAGED;
                 break;
-            case AVERAGE:
-                quality = Quality.POOR;
+            case HALF_DAMAGED:
+                quality = Quality.HALF_DAMAGED;
                 break;
-            case POOR:
+            case COMPLETELY_RUINED:
                 break;
         }
     }
