@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff0697ac-e491-4dd4-af27-15bc9454c9a7" name="Changes" comment="added merged into">
+    <list default="true" id="ff0697ac-e491-4dd4-af27-15bc9454c9a7" name="Changes" comment="added Trader to run method in Event interface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Trader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Trader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/Bandits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/Bandits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/BrokenWheel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/BrokenWheel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/GoodSpolied.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/GoodSpolied.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/MetLocal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/MetLocal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/NormalDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/NormalDay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/Rain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/Rain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/River.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/River.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/RoadsideInn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/RoadsideInn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/SmoothRoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/SmoothRoad.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702393596202</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added Trader to run method in Event interface">
+      <option name="closed" value="true" />
+      <created>1702629182854</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702629182854</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="added gitignore" />
+    <MESSAGE value="added Trader to run method in Event interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Trader to run method in Event interface" />
   </component>
 </project>
