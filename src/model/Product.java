@@ -1,9 +1,10 @@
-package emums;
+package model;
+
+import emums.Quality;
 
 public class Product {
     private Quality quality;
-
-    public Product(Quality quality) {
+     public Product(Quality quality) {
         this.quality = quality;
     }
 
