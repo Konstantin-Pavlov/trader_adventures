@@ -1,26 +1,31 @@
 package emums;
 
 public enum Goods {
-    MEAT(10, Quality.NORMAL.getQualityCoefficient(), 1000),
-    DRIED_FRUITS(20, Quality.NORMAL.getQualityCoefficient(), 250),
-    GRAIN(30, Quality.NORMAL.getQualityCoefficient(), 400),
-    FLOUR(30, Quality.NORMAL.getQualityCoefficient(), 500),
-    CLOTH(20, Quality.NORMAL.getQualityCoefficient(), 700),
-    PAINT(50, Quality.NORMAL.getQualityCoefficient(), 800);
+    MEAT("meat", 10, Quality.NORMAL.getQualityCoefficient(), 1000),
+    DRIED_FRUITS("dried fruits", 20, Quality.NORMAL.getQualityCoefficient(), 250),
+    GRAIN("grain",30, Quality.NORMAL.getQualityCoefficient(), 400),
+    FLOUR("flour",30, Quality.NORMAL.getQualityCoefficient(), 500),
+    CLOTH("cloth",20, Quality.NORMAL.getQualityCoefficient(), 700),
+    PAINT("paint",50, Quality.NORMAL.getQualityCoefficient(), 800);
 
 
     private final int weight;
+    private final String name;
     private double qualityCoefficient;
     private final int priceOnPoint;
     private Quality quality;
 
-    Goods(int weight, double qualityCoefficient, int priceOnPoint) {
+    Goods(String name, int weight, double qualityCoefficient, int priceOnPoint) {
+        this.name = name;
         this.weight = weight;
         this.qualityCoefficient = qualityCoefficient;
         this.priceOnPoint = priceOnPoint;
         this.quality = Quality.NORMAL;
     }
 
+    public String getName() {
+        return name;
+    }
 
     public int getWeight() {
         return weight;

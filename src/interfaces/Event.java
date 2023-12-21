@@ -1,4 +1,4 @@
-package state;
+package interfaces;
 
 import model.Trader;
 

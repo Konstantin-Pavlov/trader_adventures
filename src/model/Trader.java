@@ -1,8 +1,7 @@
 package model;
 
 import emums.Goods;
-import state.Event;
-import state.Rain;
+import interfaces.Event;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,34 +14,37 @@ public class Trader {
     private Event event;
     private Goods[] goods;
     private List<Goods> purchasedGoods;
+    private final Random random;
+    private int distance;
+    private int dayOnTheRoad;
 
-    private Random random;
-
-    public Trader(int totalCash, int speed, int capacity) {
+    public Trader(int totalCash, int capacity, int distance) {
         this.totalCash = totalCash;
-        this.speed = speed;
+        this.speed = 3;
         this.capacity = capacity;
         this.goods = Goods.values();
         this.purchasedGoods = new ArrayList<>();
         this.random = new Random();
-
+        this.distance = distance;
+        this.dayOnTheRoad = 1;
     }
 
     public void buyGoods() {
         System.out.println("покупаем товар");
         while (capacity >= 0 && totalCash >= 0) {
             Goods newItem = goods[random.nextInt(goods.length)];
-            if (capacity - newItem.getWeight()<=0 ||  totalCash - newItem.getPriceOnPoint()<=0){
+            if (capacity - newItem.getWeight() <= 0 || totalCash - newItem.getPriceOnPoint() <= 0) {
                 break;
             }
             purchasedGoods.add(newItem);
             this.capacity -= newItem.getWeight();
             this.totalCash -= newItem.getPriceOnPoint();
             System.out.println("купили товар:  " + newItem.name());
-            System.out.printf("товар весит %d, в телегу можно погрузить %d веса, денег осталось %d%n ",
+            System.out.printf("товар весит %d, в телегу можно погрузить %d веса, денег осталось %d%n",
                     newItem.getWeight(), this.capacity, this.totalCash);
         }
-        System.out.println(" закупка товара закончена ");
+        System.out.println("закупка товара закончена, купили: " + getPurchasedGoods());
+        System.out.println("\n" + "#".repeat(50) + "\n");
     }
 
     public int getSpeed() {
@@ -61,12 +63,40 @@ public class Trader {
         return purchasedGoods;
     }
 
-    public Goods getRandomGood(){
+    public Goods getRandomGood() {
+        if (purchasedGoods.isEmpty()) {
+            throw new IllegalArgumentException("The list is empty.");
+        }
         return this.purchasedGoods.get(random.nextInt(purchasedGoods.size()));
     }
 
-    public void rainEvent(){
+    public void rainEvent() {
+        if (event == null) {
+            throw new IllegalStateException("The event object is not set.");
+        }
         this.event.run(this);
     }
 
+    public void runEventScenario() {
+        if (event == null) {
+            throw new IllegalStateException("The event object is not set.");
+        }
+        this.event.run(this);
+    }
+
+    public int getDistance() {
+        return this.distance;
+    }
+
+    public void setDistance(int distance) {
+        this.distance = distance;
+    }
+
+    public int getDayOnTheRoad() {
+        return dayOnTheRoad;
+    }
+
+    public void setDayOnTheRoad(int dayOnTheRoad) {
+        this.dayOnTheRoad = dayOnTheRoad;
+    }
 }

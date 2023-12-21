@@ -1,14 +1,12 @@
-import emums.Goods;
-import emums.Quality;
+import model.Road;
 import model.Trader;
-import state.Rain;
+import state.GoodSpoiled;
 
 public class Main {
     public static void main(String[] args) {
-        Trader trader= new Trader(5000, 5, 200);
+        Trader trader = new Trader(5000, 500, 50);
         trader.buyGoods();
-        System.out.println(trader.getPurchasedGoods());
-        trader.setEvent(new Rain());
-        trader.rainEvent();
+        Road road = new Road(trader);
+        road.hitTheRoad();
     }
 }   

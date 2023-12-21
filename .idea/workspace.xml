@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff0697ac-e491-4dd4-af27-15bc9454c9a7" name="Changes" comment="implemented a decrease in the quality of a randomly selected product">
+    <list default="true" id="ff0697ac-e491-4dd4-af27-15bc9454c9a7" name="Changes" comment="changed main, final commit">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/emums/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/emums/Goods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Trader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Trader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/Bandits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/Bandits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/BrokenWheel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/BrokenWheel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/GoodSpolied.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/GoodSpoiled.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/MetLocal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/MetLocal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/NormalDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/NormalDay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/Rain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/Rain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/River.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/River.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/RoadsideInn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/RoadsideInn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/SmoothRoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/SmoothRoad.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -80,11 +89,15 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;mari__branch&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/Мой диск/my_progs/JAVA/mari/trader_adventures&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager">
@@ -106,7 +119,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.9-corretto-17.0.9-8336523bb0d9-93b19daf" />
+        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-8f899f12" />
       </set>
     </attachedChunks>
   </component>
@@ -119,6 +132,10 @@
       <option name="presentableId" value="Default" />
       <updated>1702393565358</updated>
       <workItem from="1702393566742" duration="7253000" />
+      <workItem from="1702812019645" duration="9973000" />
+      <workItem from="1702851633720" duration="1872000" />
+      <workItem from="1702922341479" duration="1199000" />
+      <workItem from="1703176215372" duration="671000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore">
       <created>1702393596202</created>
@@ -223,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702644135737</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="changed main, final commit">
+      <option name="closed" value="true" />
+      <created>1702644849210</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702644849210</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +268,7 @@
     <MESSAGE value="added methods to goods enum" />
     <MESSAGE value="unnecessary classes were removed. we use enums instead" />
     <MESSAGE value="implemented a decrease in the quality of a randomly selected product" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented a decrease in the quality of a randomly selected product" />
+    <MESSAGE value="changed main, final commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed main, final commit" />
   </component>
 </project>
