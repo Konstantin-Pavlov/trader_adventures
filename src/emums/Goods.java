@@ -31,7 +31,7 @@ public enum Goods {
         return weight;
     }
 
-    public double getQualityCoefficient() {
+    private double getQualityCoefficient() {
         return qualityCoefficient;
     }
 
