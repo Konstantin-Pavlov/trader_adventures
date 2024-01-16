@@ -12,8 +12,8 @@ public class Trader {
     private int speed;
     private int capacity;
     private Event event;
-    private Goods[] goods;
-    private List<Goods> purchasedGoods;
+    private final Goods[] goods;
+    private final List<Goods> purchasedGoods;
     private final Random random;
     private int distance;
     private int dayOnTheRoad;
@@ -68,13 +68,6 @@ public class Trader {
             throw new IllegalArgumentException("The list is empty.");
         }
         return this.purchasedGoods.get(random.nextInt(purchasedGoods.size()));
-    }
-
-    public void rainEvent() {
-        if (event == null) {
-            throw new IllegalStateException("The event object is not set.");
-        }
-        this.event.run(this);
     }
 
     public void runEventScenario() {
