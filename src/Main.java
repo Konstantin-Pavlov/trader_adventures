@@ -1,6 +1,5 @@
 import model.Road;
 import model.Trader;
-import state.GoodSpoiled;
 
 public class Main {
     public static void main(String[] args) {
