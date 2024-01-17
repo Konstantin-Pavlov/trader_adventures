@@ -43,7 +43,8 @@ public class Trader {
             System.out.printf("товар весит %d, в телегу можно погрузить %d веса, денег осталось %d%n",
                     newItem.getWeight(), this.capacity, this.totalCash);
         }
-        System.out.println("закупка товара закончена, купили: " + getPurchasedGoods());
+        System.out.println("закупка товара закончена, купили: ");
+        getPurchasedGoods().forEach(System.out::println);
         System.out.println("\n" + "#".repeat(50) + "\n");
     }
 
@@ -70,6 +71,10 @@ public class Trader {
         return this.purchasedGoods.get(random.nextInt(purchasedGoods.size()));
     }
 
+    public int getTotalCash() {
+        return totalCash;
+    }
+
     public void runEventScenario() {
         if (event == null) {
             throw new IllegalStateException("The event object is not set.");
@@ -83,6 +88,10 @@ public class Trader {
 
     public void setDistance(int distance) {
         this.distance = distance;
+    }
+
+    public void setTotalCash(int totalCash) {
+        this.totalCash = totalCash;
     }
 
     public int getDayOnTheRoad() {
