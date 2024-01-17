@@ -18,7 +18,7 @@ public class Road {
         events = new ArrayList<>(
                 // не готовые события закоментированы
                 Arrays.asList(
-//                        new Bandits(),
+                        new Bandits(),
                         new BrokenWheel(),
                         new GoodSpoiled(),
                         new MetLocal(),
