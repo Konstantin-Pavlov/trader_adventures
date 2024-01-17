@@ -52,4 +52,14 @@ public enum Goods {
         this.qualityCoefficient = quality.getQualityCoefficient();
     }
 
+    @Override
+    public String toString() {
+        return "Goods{" +
+                "weight=" + weight +
+                ", name='" + name + '\'' +
+                ", qualityCoefficient=" + qualityCoefficient +
+                ", priceOnPoint=" + priceOnPoint +
+                ", quality=" + quality +
+                '}';
+    }
 }
