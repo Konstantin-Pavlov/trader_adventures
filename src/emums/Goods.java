@@ -3,10 +3,10 @@ package emums;
 public enum Goods {
     MEAT("meat", 10, Quality.NORMAL.getQualityCoefficient(), 1000),
     DRIED_FRUITS("dried fruits", 20, Quality.NORMAL.getQualityCoefficient(), 250),
-    GRAIN("grain",30, Quality.NORMAL.getQualityCoefficient(), 400),
-    FLOUR("flour",30, Quality.NORMAL.getQualityCoefficient(), 500),
-    CLOTH("cloth",20, Quality.NORMAL.getQualityCoefficient(), 700),
-    PAINT("paint",50, Quality.NORMAL.getQualityCoefficient(), 800);
+    GRAIN("grain", 30, Quality.NORMAL.getQualityCoefficient(), 400),
+    FLOUR("flour", 30, Quality.NORMAL.getQualityCoefficient(), 500),
+    CLOTH("cloth", 20, Quality.NORMAL.getQualityCoefficient(), 700),
+    PAINT("paint", 50, Quality.NORMAL.getQualityCoefficient(), 800);
 
 
     private final int weight;
@@ -54,12 +54,20 @@ public enum Goods {
 
     @Override
     public String toString() {
-        return "Goods{" +
-                "weight=" + weight +
-                ", name='" + name + '\'' +
-                ", qualityCoefficient=" + qualityCoefficient +
-                ", priceOnPoint=" + priceOnPoint +
-                ", quality=" + quality +
-                '}';
+        return String.format(
+                "%-20s %s%n" +
+                        "%-20s %d%n" +
+                        "%-20s %.2f%n" +
+                        "%-20s %d%n" +
+                        "%-20s %.2f%n" +
+                        "%-20s %s%n",
+                "name", name,
+                "weight", weight,
+                "qualityCoefficient", qualityCoefficient,
+                "priceOnPoint", priceOnPoint,
+                "final Price", getFinalPrice(),
+                "quality", quality
+        );
+
     }
 }
