@@ -13,7 +13,7 @@ public class Bandits implements Event {
     public void run(Trader trader) {
         System.out.println("it's a robbery!");
         if (new Random().nextBoolean()) {
-            System.out.printf("you  have %d money, we take it", trader.getTotalCash());
+            System.out.printf("you  have %d money, we take it%n", trader.getTotalCash());
             trader.setTotalCash(0);
         } else {
             banditsGetTheBestGood(trader.getPurchasedGoods());
@@ -26,7 +26,7 @@ public class Bandits implements Event {
             return;
         }
         Goods goodWithMaxPrice = goods.stream().max(Comparator.comparing(Goods::getFinalPrice)).orElse(null);
-        System.out.println("украден один из самых дорогих товаров: " + goodWithMaxPrice);
+        System.out.println("украден один из самых дорогих товаров: \n" + goodWithMaxPrice);
         goods.remove(goodWithMaxPrice);
 
     }
