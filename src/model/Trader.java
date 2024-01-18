@@ -1,7 +1,6 @@
 package model;
 
 import emums.Goods;
-import interfaces.Event;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,9 +8,8 @@ import java.util.Random;
 
 public class Trader {
     private int totalCash;
-    private int speed;
+    private final int speed;
     private int capacity;
-    private Event event;
     private final Goods[] goods;
     private final List<Goods> purchasedGoods;
     private final Random random;
@@ -52,14 +50,6 @@ public class Trader {
         return speed;
     }
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
-
-    public void setEvent(Event event) {
-        this.event = event;
-    }
-
     public List<Goods> getPurchasedGoods() {
         return purchasedGoods;
     }
@@ -73,13 +63,6 @@ public class Trader {
 
     public int getTotalCash() {
         return totalCash;
-    }
-
-    public void runEventScenario() {
-        if (event == null) {
-            throw new IllegalStateException("The event object is not set.");
-        }
-        this.event.run(this);
     }
 
     public int getDistance() {
