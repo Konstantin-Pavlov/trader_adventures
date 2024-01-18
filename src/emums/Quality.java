@@ -9,7 +9,7 @@ public enum Quality
     COMPLETELY_RUINED( 0.1);
 
 
-    private double qualityCoefficient;
+    private final double qualityCoefficient;
 
     Quality(double qualityCoefficient) {
         this.qualityCoefficient = qualityCoefficient;
