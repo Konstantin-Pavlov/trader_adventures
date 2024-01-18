@@ -17,7 +17,7 @@ public class Rain implements Event {
             System.out.println("с вероятностью 30% 1 товар испортился качество и цена снижены");
             Goods good = trader.getRandomGood();
             if (good.getQuality() == Quality.COMPLETELY_RUINED) {
-                System.out.printf("товар %s уже полность испорчен, он стоит %f%n", good.getName(), good.getFinalPrice());
+                System.out.printf("товар %s уже полностью испорчен, он стоит %.2f%n", good.getName(), good.getFinalPrice());
                 return;
             }
             System.out.println("товар испорчен: " + good.name());
