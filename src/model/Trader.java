@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Trader {
-    private int totalCash;
+    private double totalCash;
     private final int speed;
     private int capacity;
     private final Goods[] goods;
@@ -61,7 +61,7 @@ public class Trader {
         return this.purchasedGoods.get(random.nextInt(purchasedGoods.size()));
     }
 
-    public int getTotalCash() {
+    public double getTotalCash() {
         return totalCash;
     }
 
@@ -73,7 +73,7 @@ public class Trader {
         this.distance = distance;
     }
 
-    public void setTotalCash(int totalCash) {
+    public void setTotalCash(double totalCash) {
         this.totalCash = totalCash;
     }
 
