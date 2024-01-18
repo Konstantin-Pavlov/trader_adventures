@@ -38,7 +38,7 @@ public class Trader {
             this.capacity -= newItem.getWeight();
             this.totalCash -= newItem.getPriceOnPoint();
             System.out.println("купили товар:  " + newItem.name());
-            System.out.printf("товар весит %d, в телегу можно погрузить %d веса, денег осталось %d%n",
+            System.out.printf("товар весит %d, в телегу можно погрузить %d веса, денег осталось %.2f%n",
                     newItem.getWeight(), this.capacity, this.totalCash);
         }
         System.out.println("закупка товара закончена, купили: ");
