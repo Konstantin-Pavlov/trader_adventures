@@ -25,7 +25,7 @@ public class Road {
                         new NormalDay(),
                         new Rain(),
                         new River(),
-//                        new RoadsideInn(),
+                        new RoadsideInn(),
                         new SmoothRoad())
         );
     }
@@ -34,6 +34,7 @@ public class Road {
         while (trader.getDistance() >= 0) {
             System.out.println("day on the road: " + trader.getDayOnTheRoad());
             System.out.println("distance remains: " + trader.getDistance());
+            System.out.println("number of goods: " + trader.getPurchasedGoods().size());
             runEventScenario();
             trader.setDayOnTheRoad(trader.getDayOnTheRoad() + 1);
             System.out.println("the day is over");
