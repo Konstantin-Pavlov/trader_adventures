@@ -13,7 +13,7 @@ public class Bandits implements Event {
     public void run(Trader trader) {
         System.out.println("it's a robbery!");
         if (new Random().nextBoolean()) {
-            System.out.printf("you  have %d money, we take it%n", trader.getTotalCash());
+            System.out.printf("you  have %.2f money, we take it%n", trader.getTotalCash());
             trader.setTotalCash(0);
         } else {
             banditsGetTheBestGood(trader.getPurchasedGoods());
