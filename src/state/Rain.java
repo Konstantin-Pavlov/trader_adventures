@@ -38,7 +38,7 @@ public class Rain implements Event {
                 default:
                     System.err.println("товар максимально испорчен");
             }
-            System.out.println("теперь он стоит: " + good.getFinalPrice());
+            System.out.printf("теперь он стоит: %.2f%n", good.getFinalPrice());
         }
     }
 }
