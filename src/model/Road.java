@@ -16,7 +16,7 @@ public class Road {
     public Road(Trader trader) {
         this.trader = trader;
         events = new ArrayList<>(
-                // не готовые события закоментированы
+                // не готовые события закомментированы
                 Arrays.asList(
                         new Bandits(),
                         new BrokenWheel(),
@@ -34,8 +34,7 @@ public class Road {
         while (trader.getDistance() >= 0) {
             System.out.println("day on the road: " + trader.getDayOnTheRoad());
             System.out.println("distance remains: " + trader.getDistance());
-            trader.setEvent(getRandomEvent());
-            trader.runEventScenario();
+            runEventScenario();
             trader.setDayOnTheRoad(trader.getDayOnTheRoad() + 1);
             System.out.println("the day is over");
             System.out.println("\n" + "#".repeat(50) + "\n");
@@ -47,6 +46,10 @@ public class Road {
         Random random = new Random();
         int eventIndex = random.nextInt(events.size());
         return events.get(eventIndex);
+    }
+
+    private void runEventScenario(){
+        getRandomEvent().run(trader);
     }
 }
 
