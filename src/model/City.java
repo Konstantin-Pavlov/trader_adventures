@@ -3,12 +3,10 @@ package model;
 import java.util.*;
 
 public class City {
-    private List<Integer> distanceAndCoef;
     private Map<String, List<Integer>> cities;
 
     public City() {
         this.cities = new HashMap<>();
-        this.distanceAndCoef = new ArrayList<>();
         initializationDistance();
     }
 
